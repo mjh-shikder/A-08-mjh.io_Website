@@ -10,7 +10,7 @@ const Home = () => {
     
     
     return (
-        <div>
+        <div className='bg-[#f5f5f5]'>
             <Banner></Banner>
             <Trending trending={trending}></Trending>
             

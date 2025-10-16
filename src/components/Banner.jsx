@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className="">
       <div className="md:w-11/12 mx-auto ">
-        <h1 className="md:text-6xl text-4xl font-bold text-center mt-24 text-gray-700 mb-8">
+        <h1 className="md:text-6xl text-4xl font-bold text-center pt-24 text-gray-700 mb-8">
           We Build
           <br />
           <span className="font-extrabold text-[#8150e9] ">Productive</span>
@@ -20,7 +20,7 @@ const Banner = () => {
         </p>
 
         <div className="flex items-center justify-center gap-3 mt-12">
-          <div className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 ">
+          <div className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 hover:cursor-pointer">
             <img src={playstore} alt="" />
             <h2 className="font-semibold ">Google Play</h2>
           </div>
@@ -36,7 +36,7 @@ const Banner = () => {
       </div>
           
           <div className="bg-gradient-to-br from-[#632ee3] to-[#9f62f2] ">
-              <div className="w-10/12 mx-auto">
+              <div className="w-6/12 mx-auto">
                   
               
                   <h1 className="pt-20 text-center text-4xl font-bold text-white ">Trusted by Millions, Built for You</h1>

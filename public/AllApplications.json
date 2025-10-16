@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://example.com/app1.jpg",
+    "image": "https://img.icons8.com/color/512/cloud-storage.png",
     "title": "TaskMaster Pro",
     "companyName": "NextGen Apps",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://example.com/app2.jpg",
+    "image": "https://img.icons8.com/color/512/settings.png",
     "title": "FitTrack",
     "companyName": "Wellness Tech",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://example.com/app3.jpg",
+    "image": "https://img.icons8.com/color/512/download.png",
     "title": "PhotoBlend Studio",
     "companyName": "PixelCraft",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://example.com/app4.jpg",
+    "image": "https://img.icons8.com/color/512/user.png",
     "title": "NoteWise",
     "companyName": "IdeaSync Ltd.",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://example.com/app5.jpg",
+    "image": "https://img.icons8.com/color/512/search.png ",
     "title": "BudgetBuddy",
     "companyName": "SmartFinance Co.",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://example.com/app6.jpg",
+    "image": "https://img.icons8.com/color/512/camera.png",
     "title": "LangLearn Pro",
     "companyName": "EduWorld",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://example.com/app7.jpg",
+    "image": "https://img.icons8.com/color/512/music.png",
     "title": "CalmWave",
     "companyName": "MindEase Labs",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://example.com/app8.jpg",
+    "image": "https://img.icons8.com/color/512/home.png",
     "title": "RideMate",
     "companyName": "UrbanMobility Inc.",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://example.com/app9.jpg",
+    "image": "https://img.icons8.com/color/512/whatsapp.png",
     "title": "CookSmart",
     "companyName": "HomeChef Apps",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://example.com/app10.jpg",
+    "image": "https://img.icons8.com/color/512/photo-gallery.png",
     "title": "GameVault",
     "companyName": "Arcadia Studios",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://example.com/app11.jpg",
+    "image": "https://img.icons8.com/color/512/application-window.png",
     "title": "HealthSync",
     "companyName": "CareConnect",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "https://example.com/app12.jpg",
+    "image": "https://img.icons8.com/color/512/news.png",
     "title": "StreamBox",
     "companyName": "VisionTech",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "https://example.com/app13.jpg",
+    "image": "https://img.icons8.com/color/512/google.png",
     "title": "StudyPal",
     "companyName": "BrightMind",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "https://example.com/app14.jpg",
+    "image": " https://img.icons8.com/color/512/smartphone--v1.png",
     "title": "TimeWise",
     "companyName": "OrganizeIt",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "https://example.com/app15.jpg",
+    "image": "https://img.icons8.com/color/512/cd.png",
     "title": "CryptoPulse",
     "companyName": "BlockForge",
     "id": 15,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "https://example.com/app16.jpg",
+    "image": " https://img.icons8.com/color/512/gimp.png",
     "title": "PetCare+",
     "companyName": "FurFriends",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "https://example.com/app17.jpg",
+    "image": "ttps://img.icons8.com/color/512/utorrent.png",
     "title": "MindNotes",
     "companyName": "TherapyWorks",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "https://example.com/app18.jpg",
+    "image": "https://img.icons8.com/color/512/software-installer.png",
     "title": "Travelista",
     "companyName": "GlobeTrek",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "https://example.com/app19.jpg",
+    "image": "https://img.icons8.com/color/512/image.png",
     "title": "SafeHome",
     "companyName": "SecureTech",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "https://example.com/app20.jpg",
+    "image": "https://img.icons8.com/color/512/resize.png",
     "title": "EventEase",
     "companyName": "PlanIt Digital",
     "id": 20,
@@ -360,7 +360,7 @@
     ]
   },
   {
-    "image": "https://example.com/app21.jpg",
+    "image": " https://img.icons8.com/color/512/folder.png ",
     "title": "ShopEase",
     "companyName": "RetailHub",
     "id": 21,
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "image": "https://example.com/app22.jpg",
+    "image": "https://img.icons8.com/color/512/vector.png",
     "title": "NewsFlow",
     "companyName": "InfoSphere",
     "id": 22,
@@ -396,7 +396,7 @@
     ]
   },
   {
-    "image": "https://example.com/app23.jpg",
+    "image": "https://img.icons8.com/color/512/computer.png",
     "title": "Artify",
     "companyName": "CreativeCode",
     "id": 23,
@@ -414,7 +414,7 @@
     ]
   },
   {
-    "image": "https://example.com/app24.jpg",
+    "image": "https://img.icons8.com/color/512/desktop.png",
     "title": "WorkSync",
     "companyName": "TeamFlow",
     "id": 24,
@@ -432,7 +432,7 @@
     ]
   },
   {
-    "image": "https://example.com/app25.jpg",
+    "image": "https://img.icons8.com/color/512/video.png",
     "title": "GardenJoy",
     "companyName": "GreenRoots",
     "id": 25,
@@ -450,7 +450,7 @@
     ]
   },
   {
-    "image": "https://example.com/app26.jpg",
+    "image": "https://img.icons8.com/color/512/monitor.png",
     "title": "MusicSphere",
     "companyName": "TuneWorks",
     "id": 26,
@@ -468,7 +468,7 @@
     ]
   },
   {
-    "image": "https://example.com/app27.jpg",
+    "image": "https://img.icons8.com/color/512/easy.png",
     "title": "SkillBoost",
     "companyName": "LearnPro",
     "id": 27,
@@ -486,7 +486,7 @@
     ]
   },
   {
-    "image": "https://example.com/app28.jpg",
+    "image": "https://img.icons8.com/color/512/email.png",
     "title": "DocuScan",
     "companyName": "ScanWorks",
     "id": 28,

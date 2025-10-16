@@ -1,6 +1,6 @@
 [
-  {
-    "image": "https://example.com/app1.jpg",
+{
+    "image": "https://img.icons8.com/color/512/cloud-storage.png",
     "title": "TaskMaster Pro",
     "companyName": "NextGen Apps",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://example.com/app2.jpg",
+    "image": "https://img.icons8.com/color/512/settings.png",
     "title": "FitTrack",
     "companyName": "Wellness Tech",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://example.com/app3.jpg",
+    "image": "https://img.icons8.com/color/512/download.png",
     "title": "PhotoBlend Studio",
     "companyName": "PixelCraft",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://example.com/app4.jpg",
+    "image": "https://img.icons8.com/color/512/user.png",
     "title": "NoteWise",
     "companyName": "IdeaSync Ltd.",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://example.com/app5.jpg",
+    "image": "https://img.icons8.com/color/512/search.png ",
     "title": "BudgetBuddy",
     "companyName": "SmartFinance Co.",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://example.com/app6.jpg",
+    "image": "https://img.icons8.com/color/512/camera.png",
     "title": "LangLearn Pro",
     "companyName": "EduWorld",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://example.com/app7.jpg",
+    "image": "https://img.icons8.com/color/512/music.png",
     "title": "CalmWave",
     "companyName": "MindEase Labs",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://example.com/app8.jpg",
+    "image": "https://img.icons8.com/color/512/home.png",
     "title": "RideMate",
     "companyName": "UrbanMobility Inc.",
     "id": 8,
@@ -144,3 +144,4 @@
     ]
   }
 ]
+ 
