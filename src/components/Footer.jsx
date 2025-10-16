@@ -8,7 +8,7 @@ import { FaGithub } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div className='bg-base-200'>
-            <footer className="footer sm:footer-horizontal  text-base-content p-10 w-10/12 mx-auto">
+            <footer className="footer sm:footer-horizontal  text-base-content py-10 w-10/12 mx-auto">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>

@@ -7,13 +7,13 @@ const Banner = () => {
   return (
     <div className="">
       <div className="md:w-11/12 mx-auto ">
-        <h1 className="text-6xl font-bold text-center mt-24 text-gray-700 mb-5">
+        <h1 className="md:text-6xl text-4xl font-bold text-center mt-24 text-gray-700 mb-8">
           We Build
           <br />
           <span className="font-extrabold text-[#8150e9] ">Productive</span>
           Apps
         </h1>
-        <p className="text-xl text-gray-500 text-center ">
+        <p className="md:text-xl text-gray-500 text-center ">
           At MJH.IO , we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting. <br /> Our goal is to turn your
           ideas into digital experiences that truly make an impact.
@@ -31,9 +31,9 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="mt-12 flex justify-center">
+      <div className="mt-12 flex justify-center px-3 md:px-0">
         <img src={bannerImage} alt="" />
-          </div>
+      </div>
           
           <div className="bg-gradient-to-br from-[#632ee3] to-[#9f62f2] ">
               <div className="w-10/12 mx-auto">
@@ -41,7 +41,7 @@ const Banner = () => {
               
                   <h1 className="pt-20 text-center text-4xl font-bold text-white ">Trusted by Millions, Built for You</h1>
                   
-                  <div className="text-white flex justify-between mt-10 ">
+                  <div className="text-white flex md:flex-row flex-col justify-between mt-10 ">
                       
                  <div className="pb-20 text-center">
                   <p className="font-light text-gray-200 ">Total Downloads</p>
