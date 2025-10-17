@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import downloadIcon from "./../assets/icon-downloads.png";
 import avgRatingIcon from "./../assets/icon-ratings.png";
 import totalReviewIcon from "./../assets/icon-review.png";
 import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis } from "recharts";
+import { ToastContainer, toast } from 'react-toastify';
 
 const AppDetails = () => {
+    const [isInsTalled, setIsInsTalled] = useState(false);
+
+    const handleInstall = () => {
+
+        setIsInsTalled(true);
+
+       
+
+        toast.success('App Successfully Installed!', {
+            position: 'top-center',
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+        });
+    }
+
   const { id } = useParams();
   const appId = parseInt(id);
   const allData = useLoaderData();
@@ -43,6 +62,7 @@ const AppDetails = () => {
 
   const firstDownloadDigit = downloads.toString()[0];
   const firstTwoReviewDigits = reviews.toString().slice(0, -2);
+    
 
   return (
     <div className="bg-[#f5f5f5] ">
@@ -96,10 +116,12 @@ const AppDetails = () => {
               </h1>
             </div>
           </div>
-          <button className="btn bg-[#00cf8d] text-white px-6 ">
-            Install Now ({size} MB)
-          </button>
-        </div>
+          <button onClick={handleInstall}  className={`btn bg-[#00cf8d] text-white px-6 ${isInsTalled ? 'opacity-70 cursor-not-allowed ' : ''} `}>
+            {isInsTalled ? 'Installed' : `Install Now (${size}MB)`}
+                  </button>
+                  <ToastContainer />
+              </div>
+              
       </div>
       {/* Border */}
       <div className="border-t border-gray-300 py-5 w-10/12 mx-auto "></div>
