@@ -4,6 +4,16 @@ import appStore from "./../assets/appsote.png";
 import bannerImage from "./../assets/hero.png";
 
 const Banner = () => {
+
+  const handlePlaystore = () => {
+  window.open('https://play.google.com/store/games?hl=en')
+}
+
+const handleAppstore = () => {
+window.open('https://www.apple.com/app-store/')
+}
+
+
   return (
     <div className="">
       <div className="md:w-11/12 mx-auto ">
@@ -20,14 +30,17 @@ const Banner = () => {
         </p>
 
         <div className="flex items-center justify-center gap-3 mt-12">
-          <div className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 hover:cursor-pointer">
+
+          <div onClick={handlePlaystore} className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 hover:cursor-pointer">
             <img src={playstore} alt="" />
             <h2 className="font-semibold ">Google Play</h2>
           </div>
-          <div className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 ">
+
+          <div onClick={handleAppstore} className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 ">
             <img src={appStore} alt="" />
             <h2 className="font-semibold ">App Store</h2>
           </div>
+
         </div>
       </div>
 
