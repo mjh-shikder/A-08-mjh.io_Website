@@ -38,9 +38,10 @@ const AppDetails = () => {
 
 // console.log(Data);
 
+const ratingsRevers = [...ratings].reverse()
 
 
- const data = ratings
+ const data = ratingsRevers
     
 
   const firstDownloadDigit = downloads.toString()[0];
@@ -48,8 +49,8 @@ const AppDetails = () => {
 
   return (
     <div className="bg-[#f5f5f5] ">
-      <div className="flex items-center gap-10 py-20 w-10/12 mx-auto">
-        <div className="w-3/12 bg-white rounded-xl shadow-md ">
+      <div className="flex md:flex-row flex-col items-center gap-10 py-20 md:w-10/12 mx-auto ">
+        <div className="md:w-3/12 w-5/12 bg-white rounded-xl shadow-md ">
           <img className="" src={image} alt="app-logo" />
         </div>
         <div>
@@ -63,7 +64,7 @@ const AppDetails = () => {
             </span>{" "}
           </p>
 
-          <div className="border-t border-gray-300 mt-5 w-[900px] "></div>
+          <div className="border-t border-gray-300 mt-5 md:w-[900px] "></div>
 
           <div className="flex gap-10 my-5">
             <div className="flex flex-col items-center ">
@@ -102,21 +103,23 @@ const AppDetails = () => {
             Install Now ({size} MB)
           </button>
         </div>
-      </div>
+          </div>
+          {/* Rechart */}
 
-      <div className="border-t border-gray-300 py-5  "></div>
+          <div className="border-t border-gray-300 py-5  "></div>
           <h2 className="font-semibold text-gray-700 mb-4">Ratings</h2>
           
-          <div className=" relative h-[600px] ">
+          
+          <div className="  md:h-[600px] h-[550px]  ">
               
-        <div className="rotate-90 absolute">
-          {/* <ResponsiveContainer width="100%" height="100%"> */}
-                  <BarChart width={500} height={500} data={data}>
-                      <XAxis dataKey={'name'}></XAxis>
-                      {/* <YAxis ></YAxis> */}
-            <Bar dataKey="count" fill="#8884d8" />
+        <div className="w-[600px] h-[500px] ">
+          <ResponsiveContainer width="100%" height="100%">
+                  <BarChart  data={data} layout="vertical" width={500} height={500}>
+                      <XAxis  type="number" dataKey={'count'}></XAxis>
+                      <YAxis dataKey={'name'} type="category"  ></YAxis>
+            <Bar dataKey="count" fill="#b284fd" />
           </BarChart>
-          {/* </ResponsiveContainer> */}
+          </ResponsiveContainer>
         </div>
       </div>
     </div>
