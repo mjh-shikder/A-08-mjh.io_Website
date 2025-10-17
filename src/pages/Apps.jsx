@@ -12,7 +12,7 @@ const Apps = () => {
       <h1 className="text-5xl font-bold text-gray-800 text-center pt-24 mb-6">
         Our All Applications
       </h1>
-      <p className="text-center text-gray-600 mb-10">
+      <p className="text-center text-gray-600 mb-10 md:px-0 px-3">
         Explore All Apps on the Market Developed by us. We code for Millions
       </p>
 

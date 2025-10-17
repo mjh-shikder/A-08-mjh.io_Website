@@ -12,8 +12,9 @@ body {
 .active {
      color: blueviolet;
      border: 1px solid blueviolet;
-     border-radius: 10px;
+     border-radius: 6px;
      margin-left: 3px;
      margin-right: 3px ;
      text-align: center;
+     font-weight: 600;
 }

@@ -33,12 +33,12 @@ window.open('https://www.apple.com/app-store/')
 
           <div onClick={handlePlaystore} className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 hover:cursor-pointer">
             <img src={playstore} alt="" />
-            <h2 className="font-semibold ">Google Play</h2>
+            <h2 className="font-semibold ml-1">Google Play</h2>
           </div>
 
-          <div onClick={handleAppstore} className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 ">
+          <div onClick={handleAppstore} className="flex items-center border border-gray-300 rounded-md px-2.5 py-1 hover:cursor-pointer">
             <img src={appStore} alt="" />
-            <h2 className="font-semibold ">App Store</h2>
+            <h2 className="font-semibold ml-2">App Store</h2>
           </div>
 
         </div>

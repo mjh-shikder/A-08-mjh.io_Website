@@ -2,17 +2,26 @@ import React from "react";
 import { Link, NavLink } from "react-router";
 import logo from "./../assets/logo.png";
 import { FaGithub } from "react-icons/fa";
+import { AiOutlineHome } from 'react-icons/ai';
+import { FaAppStore } from 'react-icons/fa';
+import { MdInstallDesktop } from 'react-icons/md';
+
 const Navbar = () => {
   const links = (
     <>
-      <NavLink to={"/"}>
-        <li className="mx-3 ">Home</li>
+      <NavLink to={"/"}> <div className="flex items-center px-1.5 "><AiOutlineHome></AiOutlineHome>
+        <li className="mx-1"> Home</li>
+      </div> 
       </NavLink>
       <NavLink to={"/apps"}>
-        <li className="mx-3 ">Apps</li>
+        <div className="flex items-center px-1.5 "><FaAppStore></FaAppStore>
+        <li className="mx-1"> Apps</li>
+      </div> 
       </NavLink>
       <NavLink to={"/installation"}>
-        <li className="mx-3 ">Installation</li>
+        <div className="flex items-center px-1.5 "><MdInstallDesktop></MdInstallDesktop>
+        <li className="mx-1"> Installation</li>
+      </div> 
       </NavLink>
     </>
   );
