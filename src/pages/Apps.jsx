@@ -5,7 +5,7 @@ import AppCard from "../components/AppCard";
 const Apps = () => {
   const allData = useLoaderData();
 
-  console.log(allData);
+  
 
   return (
     <div className="bg-[#f5f5f5]  ">

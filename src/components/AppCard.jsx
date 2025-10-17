@@ -1,13 +1,16 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const AppCard = ({ app }) => {
 
     const { title, id, ratingAvg, downloads, image } = app
     
+    
     const firstDownloadDigit = downloads.toString()[0];
    
     return (
+        <Link to={`/appDetails/${id}`}>
         <div className='bg-white p-3 rounded-xl hover:shadow-md hover:cursor-pointer'>
             <div className=''>
                 <div className=' p-5  rounded-xl bg-gray-100'>
@@ -22,6 +25,7 @@ const AppCard = ({ app }) => {
             
             
         </div>
+        </Link>
     );
 };
 
