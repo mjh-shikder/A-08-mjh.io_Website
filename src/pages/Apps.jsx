@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import AppCard from "../components/AppCard";
 
 const Apps = () => {
   const allData = useLoaderData();
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredApps, setFilteredApps] = useState(allData);
 
+  useEffect(() => {
+    const filtered = allData.filter((app) => app.title.toLowerCase().includes(searchQuery.toLocaleLowerCase()));
+    setFilteredApps(filtered)
+
+  }, [searchQuery, allData]);
+
+  // Handle search 
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
   
 
   return (
@@ -17,7 +29,7 @@ const Apps = () => {
       </p>
 
       <div className="flex justify-between w-10/12 mx-auto my-7 items-center ">
-        <h1 className="text-xl font-semibold text-gray-700 ">(28)Apps Found</h1>
+        <h1 className="text-xl font-semibold text-gray-700 ">({filteredApps.length})Apps Found</h1>
 
         <label className="input">
           <svg
@@ -36,14 +48,25 @@ const Apps = () => {
               <path d="m21 21-4.3-4.3"></path>
             </g>
           </svg>
-          <input type="search" required placeholder="Search" />
+          <input type="search"
+            required
+            placeholder="Search"
+            value={searchQuery}
+            onChange={handleSearchChange}
+          />
         </label>
       </div>
 
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5 w-10/12 mx-auto pb-16">
-        {allData.map((app) => (
-          <AppCard app={app} key={app.id}></AppCard>
-        ))}
+        {filteredApps.length > 0 ? (filteredApps.map(app => <AppCard app={app} key={app.id}></AppCard>)) :
+          (
+            searchQuery && (
+              <p> No apps found</p>
+            )
+          )
+
+
+        }
       </div>
     </div>
   );
