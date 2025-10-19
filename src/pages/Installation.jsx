@@ -5,8 +5,12 @@ import InstallCard from "../components/InstallCard";
 
 const Installation = () => {
 
-    const [installedList, setIsInsTalledList] = useState([])
   const allData = useLoaderData();
+
+  let [installedList, setIsInsTalledList] = useState([])
+
+   const [sortOption, setSortOptions] = useState("High-Low")
+  
 
   useEffect(() => {
     const storedBookData = getStoredApp();
@@ -17,8 +21,27 @@ const Installation = () => {
     );
 
     setIsInsTalledList(installedList);
-  }, []);
+  }, [allData]);
 
+  const handleSortChange = e => {
+    const newSortOption = e.target.value;
+    setSortOptions(newSortOption);
+    const sortedList = [...installedList].sort((a, b) => {
+      if (sortOption === "High-Low") {
+        return b.downloads - a.downloads;
+      }
+      else {
+        return a.downloads - b.downloads;
+      }
+
+
+    });
+    setIsInsTalledList(sortedList);
+  }
+
+
+
+  
   return (
     <div className="bg-[#f5f5f5]">
 
@@ -33,12 +56,12 @@ const Installation = () => {
 
       <div className="flex items-center justify-between gap-5 ">
         <h1 className="text-xl font-semibold text-gray-700 ">
-          ({``})Apps Found
+          ({installedList.length})Apps Found
         </h1>
 
         <select
-          value={``}
-          onChange={``}
+          value={sortOption}
+          onChange={handleSortChange}
           className="border border-gray-300 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           <option value="High-Low">Downloads: High to Low</option>
