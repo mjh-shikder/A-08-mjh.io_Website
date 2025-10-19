@@ -16,16 +16,25 @@ const addToStoredDB = (id) => {
 
     if (storeAppData.includes(id)) {
 
-      
-     return
+        return
+
     }
 
     else {
         storeAppData.push(id);
         const data = JSON.stringify(storeAppData);
         localStorage.setItem("Insatalled", data)
-        
+
     }
+
+
 }
 
-export { addToStoredDB, getStoredApp };
+
+const removeFromStoredDb = id => {
+    const storeAppData = getStoredApp();
+    const updatedData = storeAppData.filter((appId) => appId !== id);
+    localStorage.setItem("Insatalled", JSON.stringify(updatedData));
+}
+
+export { addToStoredDB, getStoredApp, removeFromStoredDb };
