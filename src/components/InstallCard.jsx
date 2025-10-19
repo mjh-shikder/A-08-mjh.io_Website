@@ -1,13 +1,13 @@
 import { Download, Star } from "lucide-react";
 import React from "react";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 
 const InstallCard = ({ app, handleUninstall }) => {
 
   const { image, title, size, downloads, ratingAvg } = app;
   const firstDownloadDigit = downloads.toString()[0];
 
-  const showingToastify = () => {toast.warn('App Unistalled')}
+  
 
 
   return (
@@ -36,8 +36,8 @@ const InstallCard = ({ app, handleUninstall }) => {
           </div>
         </div>
         <div>
-          <button onClick={() => { handleUninstall(); showingToastify()}}  className="btn mr-3 bg-[#00d390] text-white ">Unistall</button>
-          <ToastContainer />
+          <button onClick={() => handleUninstall()}  className="btn mr-3 bg-[#00d390] text-white ">Unistall</button>
+         
         </div>
       </div>
     </div>

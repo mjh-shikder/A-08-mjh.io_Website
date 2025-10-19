@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import { getStoredApp, removeFromStoredDb } from "../Utility/addToDb";
 import InstallCard from "../components/InstallCard";
-import { toast, ToastContainer} from 'react-toastify';
+import { toast} from 'react-toastify';
 
 const Installation = () => {
   const allData = useLoaderData();
@@ -81,7 +81,7 @@ const Installation = () => {
             ))}
         </div>
       </div>
-            <ToastContainer />
+           
     </div>
   );
 };

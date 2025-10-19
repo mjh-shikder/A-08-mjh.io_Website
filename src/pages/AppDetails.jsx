@@ -4,7 +4,7 @@ import downloadIcon from "./../assets/icon-downloads.png";
 import avgRatingIcon from "./../assets/icon-ratings.png";
 import totalReviewIcon from "./../assets/icon-review.png";
 import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis } from "recharts";
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { addToStoredDB } from "../Utility/addToDb";
 
 const AppDetails = () => {
@@ -122,7 +122,7 @@ const AppDetails = () => {
           <button onClick={()=>handleInstall(id)}  className={`btn bg-[#00cf8d] text-white px-6 ${isInsTalled ? 'opacity-70 cursor-not-allowed ' : ''} `}>
             {isInsTalled ? 'Installed' : `Install Now (${size}MB)`}
                   </button>
-                  <ToastContainer />
+                  
               </div>
               
       </div>

@@ -15,8 +15,8 @@ window.open('https://www.apple.com/app-store/')
 
 
   return (
-    <div className="">
-      <div className="md:w-11/12 mx-auto ">
+    <div className=" ">
+      <div className="md:w-11/12 mx-auto  ">
         <h1 className="md:text-6xl text-4xl font-bold text-center pt-24 text-gray-700 mb-8">
           We Build
           <br />
