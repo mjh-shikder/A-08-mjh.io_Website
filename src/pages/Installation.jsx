@@ -6,13 +6,13 @@ import InstallCard from "../components/InstallCard";
 const Installation = () => {
 
     const [installedList, setIsInsTalledList] = useState([])
-  const allApps = useLoaderData();
+  const allData = useLoaderData();
 
   useEffect(() => {
     const storedBookData = getStoredApp();
     const convertedToString = storedBookData.map((id) => parseInt(id));
 
-    const installedList = allApps.filter((app) =>
+    const installedList = allData.filter((app) =>
       convertedToString.includes(app.id)
     );
 
@@ -20,8 +20,11 @@ const Installation = () => {
   }, []);
 
   return (
-    <div className="w-10/12 mx-auto ">
-      <h1 className="text-5xl font-bold text-gray-800 text-center pt-24 mb-6">
+    <div className="bg-[#f5f5f5]">
+
+    
+    <div className="w-10/12 mx-auto  ">
+      <h1 className="text-5xl font-bold text-gray-700 text-center pt-24 mb-6">
         Your Installed Apps
       </h1>
       <p className="text-center text-gray-600 mb-10 md:px-0 px-3">
@@ -44,12 +47,14 @@ const Installation = () => {
       </div>
       {/* installed cards */}
 
-          <div>
+          <div className="flex flex-col gap-2.5 pt-5 pb-10 min-h-[500px] ">
               {
                   installedList.map(app=><InstallCard app={app} key={app.id}></InstallCard>)
               }
       </div>
-    </div>
+      </div>
+      
+      </div>
   );
 };
 
