@@ -17,7 +17,7 @@ const ErrorPage = () => {
       <a
         className="btn px-7 bg-gradient-to-br text-white from-[#6630e4] to-[#bb8bff]
                 "
-        href="https://github.com/mjh-shikder"
+        
       >
         Go Back
           </a>

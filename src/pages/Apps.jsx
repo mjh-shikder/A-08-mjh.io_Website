@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import AppCard from "../components/AppCard";
+import NoAppsFound from "./Error/NoAppsFound";
 
 const Apps = () => {
   const allData = useLoaderData();
@@ -57,11 +58,13 @@ const Apps = () => {
         </label>
       </div>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5 w-10/12 mx-auto pb-16">
-        {filteredApps.length > 0 ? (filteredApps.map(app => <AppCard app={app} key={app.id}></AppCard>)) :
+      <div className={`${filteredApps.length > 0 ? "grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-5"
+        : ""
+      } w-10/12 mx-auto pb-16`}>
+        { filteredApps.length > 0 ? (filteredApps.map(app => <AppCard app={app} key={app.id}></AppCard>))  :
           (
             searchQuery && (
-              <p> No apps found</p>
+              <NoAppsFound></NoAppsFound>
             )
           )
 
