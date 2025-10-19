@@ -38,6 +38,8 @@ const Apps = () => {
   const handleSortChange = e => {
     setSortOptions(e.target.value);
 
+
+
   }
 
   return (
@@ -50,19 +52,21 @@ const Apps = () => {
       </p>
 
       <div className="flex justify-between w-10/12 mx-auto my-7 items-center ">
+        <div className="flex items-center gap-5 ">
+
         
         <h1 className="text-xl font-semibold text-gray-700 ">({filteredApps.length})Apps Found</h1>
 
          <select
             value={sortOption}
             onChange={handleSortChange}
-            className="border border-gray-300 rounded-md px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             <option value="High-Low">Downloads: High to Low</option>
             <option value="Low-High">Downloads: Low to High</option>
           </select>
-
-        <label className="input">
+</div>
+        <label className="input rounded-md">
           <svg
             className="h-[1em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"

@@ -5,15 +5,17 @@ import avgRatingIcon from "./../assets/icon-ratings.png";
 import totalReviewIcon from "./../assets/icon-review.png";
 import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis } from "recharts";
 import { ToastContainer, toast } from 'react-toastify';
+import { addToStoredDB } from "../Utility/addToDb";
 
 const AppDetails = () => {
     const [isInsTalled, setIsInsTalled] = useState(false);
 
-    const handleInstall = () => {
+    const handleInstall = (id) => {
 
         setIsInsTalled(true);
 
-       
+      addToStoredDB(id)
+      
 
         toast.success('App Successfully Installed!', {
             position: 'top-right',
@@ -23,6 +25,7 @@ const AppDetails = () => {
             pauseOnHover: true,
             draggable: true,
         });
+      
     }
 
   const { id } = useParams();
@@ -116,7 +119,7 @@ const AppDetails = () => {
               </h1>
             </div>
           </div>
-          <button onClick={handleInstall}  className={`btn bg-[#00cf8d] text-white px-6 ${isInsTalled ? 'opacity-70 cursor-not-allowed ' : ''} `}>
+          <button onClick={()=>handleInstall(id)}  className={`btn bg-[#00cf8d] text-white px-6 ${isInsTalled ? 'opacity-70 cursor-not-allowed ' : ''} `}>
             {isInsTalled ? 'Installed' : `Install Now (${size}MB)`}
                   </button>
                   <ToastContainer />
