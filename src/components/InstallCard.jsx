@@ -1,6 +1,6 @@
 import { Download, Star } from "lucide-react";
 import React from "react";
-import { toast } from "react-toastify";
+
 
 const InstallCard = ({ app, handleUninstall }) => {
 

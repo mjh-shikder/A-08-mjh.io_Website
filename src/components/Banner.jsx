@@ -15,7 +15,7 @@ window.open('https://www.apple.com/app-store/')
 
 
   return (
-    <div className=" ">
+    <div className="overflow-x-hidden ">
       <div className="md:w-11/12 mx-auto  ">
         <h1 className="md:text-6xl text-4xl font-bold text-center pt-24 text-gray-700 mb-8">
           We Build
@@ -49,7 +49,7 @@ window.open('https://www.apple.com/app-store/')
       </div>
           
           <div className="bg-gradient-to-br from-[#632ee3] to-[#9f62f2] ">
-              <div className="w-6/12 mx-auto">
+              <div className="md:w-6/12 mx-auto">
                   
               
                   <h1 className="pt-20 text-center text-4xl font-bold text-white ">Trusted by Millions, Built for You</h1>
@@ -67,7 +67,7 @@ window.open('https://www.apple.com/app-store/')
                   <p className="font-light text-gray-200">46% More Than Last Month</p>
                 </div> 
                  <div className="pb-20 text-center">
-                  <p className="font-light text-gray-200 ">Active Apps</p>
+                  {/* <p className="font-light text-gray-200 ">Active Apps</p> */}
                   <h1 className="text-5xl font-bold my-5">132+</h1>
                   <p className="font-light text-gray-200">31 More will Launch</p>
                 </div> 
