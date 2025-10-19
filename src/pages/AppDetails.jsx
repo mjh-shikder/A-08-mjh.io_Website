@@ -4,29 +4,26 @@ import downloadIcon from "./../assets/icon-downloads.png";
 import avgRatingIcon from "./../assets/icon-ratings.png";
 import totalReviewIcon from "./../assets/icon-review.png";
 import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis } from "recharts";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import { addToStoredDB } from "../Utility/addToDb";
 
 const AppDetails = () => {
-    const [isInsTalled, setIsInsTalled] = useState(false);
+  const [isInsTalled, setIsInsTalled] = useState(false);
 
-    const handleInstall = (id) => {
+  const handleInstall = (id) => {
+    setIsInsTalled(true);
 
-        setIsInsTalled(true);
+    addToStoredDB(id);
 
-      addToStoredDB(id)
-      
-
-        toast.success('App Successfully Installed!', {
-            position: 'top-right',
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-        });
-      
-    }
+    toast.success("App Successfully Installed!", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+    });
+  };
 
   const { id } = useParams();
   const appId = parseInt(id);
@@ -65,7 +62,6 @@ const AppDetails = () => {
 
   const firstDownloadDigit = downloads.toString()[0];
   const firstTwoReviewDigits = reviews.toString().slice(0, -2);
-    
 
   return (
     <div className="bg-[#f5f5f5] ">
@@ -119,12 +115,15 @@ const AppDetails = () => {
               </h1>
             </div>
           </div>
-          <button onClick={()=>handleInstall(id)}  className={`btn bg-[#00cf8d] text-white px-6 ${isInsTalled ? 'opacity-70 cursor-not-allowed ' : ''} `}>
-            {isInsTalled ? 'Installed' : `Install Now (${size}MB)`}
-                  </button>
-                  
-              </div>
-              
+          <button
+            onClick={() => handleInstall(id)}
+            className={`btn bg-[#00cf8d] text-white px-6 ${
+              isInsTalled ? "opacity-70 cursor-not-allowed " : ""
+            } `}
+          >
+            {isInsTalled ? "Installed" : `Install Now (${size}MB)`}
+          </button>
+        </div>
       </div>
       {/* Border */}
       <div className="border-t border-gray-300 py-5 w-10/12 mx-auto "></div>
@@ -149,20 +148,18 @@ const AppDetails = () => {
         {/* Border */}
 
         <h2 className="font-semibold text-gray-700 mb-4">Description</h2>
-        
+
         <p className="text-gray-500 md:hidden ">
           {description}
           This focus app takes the proven Pomodoro technique and makes it even
-          more practical for modern lifestyles. 
+          more practical for modern lifestyles.
           <br />
-          <br />        Users can create custom
-          work and break intervals, track how many sessions they complete each
-          day, and review detailed statistics about their focus habits over
-                  time.
-                  <br />
-          <br />   The design is minimal and calming, reducing cognitive load so
-          you can focus entirely on the task at hand. 
-         
+          <br /> Users can create custom work and break intervals, track how
+          many sessions they complete each day, and review detailed statistics
+          about their focus habits over time.
+          <br />
+          <br /> The design is minimal and calming, reducing cognitive load so
+          you can focus entirely on the task at hand.
         </p>
         <p className="text-gray-500 hidden md:block">
           {description}
