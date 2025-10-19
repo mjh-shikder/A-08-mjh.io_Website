@@ -60,7 +60,9 @@ const Apps = () => {
          <select
             value={sortOption}
             onChange={handleSortChange}
-            className="border border-gray-300 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-md px- py-2 
+             text-gray-700 focus:outline-none focus:ring-1 focus:ring-[#ac7ffb] 
+             hidden md:block"
           >
             <option value="High-Low">Downloads: High to Low</option>
             <option value="Low-High">Downloads: Low to High</option>

@@ -23,7 +23,7 @@ window.open('https://www.apple.com/app-store/')
           <span className="font-extrabold text-[#8150e9] ">Productive</span>
           Apps
         </h1>
-        <p className="md:text-xl text-gray-500 text-center ">
+        <p className="md:text-xl text-gray-500 text-center px-3.5 md:px-0 ">
           At MJH.IO , we craft innovative apps designed to make everyday life
           simpler, smarter, and more exciting. <br /> Our goal is to turn your
           ideas into digital experiences that truly make an impact.
