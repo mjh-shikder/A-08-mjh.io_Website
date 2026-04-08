@@ -6,7 +6,7 @@
 
 ## 🚀 Live Demo
 
-[text](https://mjhio.netlify.app/)
+Go to [MJH.IO](https://mjhio.netlify.app/)
 
 ---
 
